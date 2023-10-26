@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cat's Food</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        header, main, footer {
+            text-align: center;
+        }
+        main {
+            text-align: left;
+            max-width: 600px;
+            padding: 0 20px;
+        }
+        ul, ol {
+            list-style-position: inside;
+            margin-left: 0.5em;
+        }
+        img.center {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!--header-->
+    <header style="background-color:#FCF5ED">
+        <h1>Your cats are lazy to eat?</h1>
+        <h2 style="background-color:#FFF5E0"> Worry no more!🤗</h2>
+    </header>
+
+    <!--main-->
+    <main>
+        <h3>Cats are known to <em>loveee</em> eating, but some of them are just so lazy when it comes to eating</h3>
+        <img src="https://i.imgur.com/oQK5PXa.png" alt="image of cats being lazy and grumpy all the time plus not willing to eat" width="600" class="center">
+        <p>Hi, <strong>pawrents</strong>! Having a cat, <em>or two</em>, feels like having additional family members. Taking care of them also feels like nurturing our own babies.
+        <br>So, <strong>of course</strong> we may feel sad when our cats do not like to eat, righttt?</p>
+        <!--image above is the lazy cats-->
+
+        <p>Here's some tips that may help you with</p>
+        <ol>
+            <li> Give them snacks between meals. </li>
+            <li> <strong>Always</strong> clean their bowls!</li>
+            <li> Cook real foods for them, they <em>loveee</em> it. </li>
+            <li> Add additional vitamins to their meals, mixing with wet foods including human foods are recommended.</li>
+            <li> <strong>Hydration</strong> is a <em>must!</em> Never neglect your cats' loss of water intake. Encourage your cats to drink more water. You can also do this by adding
+                <br> a bit amount of water to your cats' meals (wet or real foods are recommended).</li>
+        </ol>
+
+        <h3>Already have a <em>packed</em> schedules and figured out that you cannot do <strong>all</strong> that by yourself?</h3>
+        <h3>We are coming to the rescue!💨</h3>
+        <br>
+        <h2> Introducing ✨ Kitty🐈 <em>Cat's Food</em>✨</h2>
+        <img src="https://i.imgur.com/ooCYhe0.png" 
+            alt="three cats compete for food" 
+            width="300" 
+            class="center">
+        <h4>Why should you choose us?</h4>
+        <ul>
+            <li> Tastes like <em>real foods</em>! Let your cats experience the goodness of the <em>realest ones</em> only!</li>
+            <li> Packed with nutrients and additional vitamins to help cats have a better appetite. </li>
+            <li> Additional hydration was added to increase your cats' water intake effortlessly. </li>
+            <li> Smells appetizing and <em>thus</em> may increase your cats' appetite <em>right away.</em> </li>
+            <li> Comes in different flavors and types.</li>
+        </ul>
+
+        <!--ordering section-->
+        <h2> Order now!</h2>
+        <p><em>Ps. You can just sit tight, and wait until yours is delivered in front of your doors!</em></p>
+
+
+            <label for="uname">Name:</label>
+            <input type="text" id="uname" name="uname" value="Kendall"><br>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="mail" value="Jenner@gmail.com"> <br>
+
+            <label for="flavours">Choose a flavor:</label>
+            <select id="flavours" name="flavour">
+                <option value="chicken">Chicken</option>
+                <option value="beef">Beef</option>
+                <option value="mackerel">Mackerel</option>
+                <option value="Salmon & Tuna">Salmon & Tuna</option>
+            </select>
+
+            <label for="food_type">Choose a food type:</label>
+            <select id="food_type" name="food_type">
+                <option value="wet food">Wet Food</option>
+                <option value="kibble">Kibble</option>
+                <option value="dry food">Dry Food</option>
+                <option value="real textured">Real Textured</option>
+            </select><br>
+
+            <button onclick="submitOrder();" style="color:white; background-color:#BB9981; border:none; border-radius:5px">
+                Submit
+            </button>
+            
+            <script>
+            function submitOrder() {
+                alert('Thank you! Your order has been placed. Your payment method and the transaction code will be sent to your email right away!');
+                window.location.href = 'redirect.html';
+            }
+            </script>
+            
+
+    </main>
+
+    <!--footer-->
+    <footer style="background-color: #FCF5ED">
+        Kitty🐈 Cat's Food &copy; 2023
+    </footer>
+</body>
+</html>
